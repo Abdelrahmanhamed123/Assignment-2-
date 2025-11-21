@@ -1,0 +1,13 @@
+all: abdelrahman output_program simple_program
+
+abdelrahman: abdelrahman.c
+	gcc abdelrahman.c -o abdelrahman
+
+output_program: abdelrahman1.c abdelrahman2.c
+	gcc abdelrahman1.c abdelrahman2.c -o output_program
+
+simple_program: simple_program.c
+	gcc simple_program.c -o simple_program
+
+clean:
+	rm -f process_creation output_program simple_program
