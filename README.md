@@ -1,35 +1,41 @@
-#Assignment 2: Basic forks and C Style Development
+# Assignment 2: Basic forks and C Style Development 💻
 
-Overview
-This repo contains my solutions for Lab 5 / Assignment 2.
+This repository contains my solutions for Lab 5 / Assignment 2. The programs demonstrate fundamental concepts in C development and process management.
+
+## 📖 Overview
+
 The programs show:
 
-How fork() creates parent and child processes.
-How the linker combines multiple C files into one program.
-How the loader uses shared libraries (checked using ldd).
-Files
-kassab.c
-Example using fork(). It creates a child process and both parent and child print their PIDs.
+*   How the **`fork()`** system call creates parent and child processes.
+*   How the **linker** combines multiple C files into a single executable program.
+*   How the **loader** uses shared libraries (checked using the `ldd` command).
 
-kassab1.c
-Contains the function hello() that prints a message.
+## 📁 Files
 
-kassab2.c
-Contains main() that calls hello(). When linked with kassab1.c, they form one program.
+*   **`abdelrahman.c`** 🔄
+    *   An example using `fork()`. It creates a child process, and both the parent and child print their Process IDs (PIDs).
 
-simple_program.c
-A small program used to check which shared libraries are loaded with ldd.
+*   **`abdelrahman1.c`** 🟩
+    *   Contains the `hello()` function that prints a simple message.
 
-Makefile
-Builds all the programs with one command.
+*   **`abdelrahman2.c`** 🔗
+    *   Contains the `main()` function that calls `hello()`. When linked with `abdelrahman1.c`, they form a single program.
 
-answers.txt
-Short written answers explaining what each exercise does and the roles of the linker and loader.
+*   **`simple_program.c`** 🔍
+    *   A small program used to check which shared libraries are loaded using the `ldd` command.
 
-LICENSE
-Open-source license for this project.
+*   **`Makefile`** 🔨
+    *   Builds all the programs with a single `make` command.
 
-How to Compile
-From inside the project folder:
+*   **`answers.txt`** 📝
+    *   Short written answers explaining what each exercise does and the roles of the linker and loader.
 
+*   **`LICENSE`** 🔑
+    *   The open-source license for this project.
+
+## 🛠️ How to Compile
+
+From inside the project folder, simply run:
+
+```bash
 make
